@@ -37,10 +37,10 @@ double RECTANGLE::area() {
     return area;
 }
 
-// drawing a circle based on radius 
+// drawing a rectangle based on length and breadth
 void RECTANGLE::draw() {
     cout << "Drawing a rectangle \n";
-    // creating a loop for coloumns and rows 
+    // creating a loop for columns and rows 
     for (int i = 0; i < l; ++i) {
         for (int j = 0; j < b; ++j) {
             // i == 0 means top row, i == l-1 means bottom row, j==0,i==0 means left and right coloumn 
