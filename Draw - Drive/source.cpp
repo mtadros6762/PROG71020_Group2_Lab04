@@ -20,6 +20,8 @@ In this lab the only limit is your imagination. Be creative!*/
 using namespace std;
 
 int main(void) {
+
+    // creating objects
     RECTANGLE rect(3, 4);
     RECTANGLE rect2(5, 6);
     CIRCLE circ(3);

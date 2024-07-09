@@ -9,33 +9,30 @@ b. They can be driven using the global drive function.*/
 
 using namespace std;
 
+// drawing bmw
+
 void BMW::draw() {
     cout << "     **BMW**\n";
-    cout << "      *****       \n";
-    cout << "   **       **    \n";
-    cout << "  *           *   \n";
-    cout << " *    B M W    *  \n";
-    cout << " *             *  \n";
-    cout << "  *           *   \n";
-    cout << "   **       **    \n";
-    cout << "      *****       \n";
+    cout << "        _______\n";
+    cout << " BMW   //  ||\\ \\\n";
+    cout << " _|___//___||_\\ \\___\n";
+    cout << ")  _          _    \\\n";
+    cout << "|_/ \\________/ \\___|\n";
+    cout << "__\\_/________\\_/______\n";
 }
 
 void BMW::drive() {
     cout << "Driving a BMW.\n";
 }
 
+// drawing mazda 
 void MAZDA::draw() {
     cout << "     **Mazda**\n";
-    cout << "       ****     \n";
-    cout << "   **        **   \n";
-    cout << " **            ** \n";
-    cout << "*   ***    ***   *\n";
-    cout << "*     **  **     *\n";
-    cout << "*       **       *\n";
-    cout << " **            ** \n";
-    cout << "   **        **   \n";
-    cout << "     *******    \n";
+    cout << "    ___                MAZDA" << endl;
+    cout << "      _-_-  _/\\______\\\\_|_" << endl;
+    cout << "   _-_-__  / ,-. -|-  ,-.`-." << endl;
+    cout << "      _-_- `( o )----( o )-'" << endl;
+    cout << "             `-'      `-'" << endl;
 }
 
 void MAZDA::drive() {

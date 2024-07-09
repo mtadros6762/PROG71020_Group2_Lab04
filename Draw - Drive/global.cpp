@@ -14,6 +14,8 @@ Rectangle or Circle. The function returns the total area of all the shapes passe
 a. Test this function by creating four shapes (two Rectangles and two Circles) that
 have different areas.*/
 
+
+// global draw function
 void globaldraw(SHAPE& obj) {
     obj.draw();
 }
@@ -27,6 +29,7 @@ void globaldrive(MAZDA& car) {
     car.drive();
 }
 
+// global area function
 double globalarea(SHAPE* shapes[], int size) {
     double totalarea = 0.00;
 
