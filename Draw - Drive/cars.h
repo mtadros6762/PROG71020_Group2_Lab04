@@ -6,14 +6,19 @@
 #define CARS_LIBRARY_H
 
 /*LIBRARIES AND MACROS*/
+#include "shapes.h"
 
 /*CLASSES*/
-class BMW {
-
+class BMW : public SHAPE{
+public:
+    void draw() override;
+    void drive();
 };
 
-class MAZDA {
-
+class MAZDA : public SHAPE {
+public:
+    void draw() override;
+    void drive();
 };
 
 #endif //CARS_LIBRARY_H

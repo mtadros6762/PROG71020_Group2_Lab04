@@ -6,14 +6,31 @@
 #define SHAPES_LIBRARY_H
 
 /*LIBRARIES AND MACROS*/
+#include <iostream>
 
 /*CLASSES*/
-class RECTANGLE {
-
+class SHAPE {
+public:
+    virtual void draw();
+    virtual double area();
 };
 
-class CIRCLE {
+class RECTANGLE : public SHAPE {
+    double l, b;
 
+public:
+    RECTANGLE(double length, double breadth);
+    double area() override;
+    void draw() override;
+};
+
+class CIRCLE : public SHAPE {
+    double r;
+
+public:
+    CIRCLE(double radius);
+    double area() override;
+    void draw() override;
 };
 
 #endif //SHAPES_LIBRARY_H

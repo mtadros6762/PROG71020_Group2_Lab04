@@ -17,7 +17,31 @@
 concepts that you have studied so far.
 In this lab the only limit is your imagination. Be creative!*/
 
-int main(void) {
+using namespace std;
 
-	return 0;
+int main(void) {
+    RECTANGLE rect(3, 4);
+    RECTANGLE rect2(5, 6);
+    CIRCLE circ(3);
+    CIRCLE circ2(5);
+    BMW bmw;
+    MAZDA mazda;
+
+    // creating an array of shapes 
+
+    SHAPE* shapes[] = { &rect,&rect2, &circ, &circ2 };
+
+    // Test drawing
+    globaldraw(rect);
+    globaldraw(circ2);
+    globaldraw(bmw);
+    globaldraw(mazda);
+
+    // Test driving
+    globaldrive(bmw);
+    globaldrive(mazda);
+
+    // Testing gloabal area function
+    double globalArea = globalarea(shapes, 4);
+    cout << "Total area of all shapes: " << globalArea << "\n";
 }

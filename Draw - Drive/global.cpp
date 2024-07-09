@@ -13,3 +13,27 @@ accepts an array as an input argument. The array elements can be pointed to
 Rectangle or Circle. The function returns the total area of all the shapes passed to it!
 a. Test this function by creating four shapes (two Rectangles and two Circles) that
 have different areas.*/
+
+void globaldraw(SHAPE& obj) {
+    obj.draw();
+}
+
+// function overloading for a global drive function
+void globaldrive(BMW& car) {
+    car.drive();
+}
+
+void globaldrive(MAZDA& car) {
+    car.drive();
+}
+
+double globalarea(SHAPE* shapes[], int size) {
+    double totalarea = 0.00;
+
+    for (int i = 0; i < size; i++)
+    {
+        totalarea += shapes[i]->area();
+    }
+
+    return totalarea;
+}
